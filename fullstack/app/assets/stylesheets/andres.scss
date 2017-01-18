@@ -1,0 +1,43 @@
+// Place all the styles related to the Andres controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.container {
+background-color: #686c70;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ceb3a7;
+}
+
+ul li {float: left;}
+
+
+ul li a {
+    display: block;
+    color: #dbcbc5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover:not(.active) {background-color: #b26645;}
+
+ul li a {background-color: #4588b2;}
+
+ul li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul li.right,
+    ul li {float: none;}
+}
+
+// p{
+//   margin-top: 300;
+// }

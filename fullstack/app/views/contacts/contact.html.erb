@@ -1,0 +1,44 @@
+<!-- <h1>Andres#contact</h1>
+<p>Find me in app/views/andres/contact.html.erb</p> -->
+
+<div class="backtoback">
+
+<form align="center" action="/contact" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <p>First name:</p><br>
+  <input type="text" name="contact[firstname]">
+  <br>
+  <p>Last name:</p><br>
+  <input type="text" name="contact[lastname]">
+  <br>
+
+  <p>email:</p><br>
+  <input type="text" name="contact[email]">
+  <br>
+  <p>subject:</p>
+  <input type="text" name="contact[subject]"></p>
+  <br>
+  <br>
+  <textarea rows="4" cols="50" name="contact[message]" placeholder="message...">
+    </textarea>
+
+  <br>
+  <input type="submit" value="send">
+</form>
+
+
+<!-- Twitter -->
+<a href="http://twitter.com/home?status=SHAREMESSAGE" title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+
+ <!-- Facebook -->
+<!-- <a href="https://www.facebook.com/sharer/sharer.php?u=SHAREMESSAGE" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a> -->
+
+<!-- Google+ -->
+<!-- <a href="https://plus.google.com/share?url=SHAREMESSAGE" title="Share on Google+" target="_blank" class="btn btn-googleplus"><i class="fa fa-google-plus"></i> Google+</a> -->
+
+<!-- StumbleUpon -->
+<!-- <a href="http://www.stumbleupon.com/submit?url=SHAREMESSAGE" title="Share on StumbleUpon" target="_blank" data-placement="top" class="btn btn-stumbleupon"><i class="fa fa-stumbleupon"></i> Stumbleupon</a> -->
+
+<!-- LinkedIn -->
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=SHAREMESSAGE" title="Share on LinkedIn" target="_blank" class="btn btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>
+</div>
